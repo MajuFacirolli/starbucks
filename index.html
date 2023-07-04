@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks Landing Page</title>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" class="logo">
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+    </header>
+    <main>
+        <div class="circle"></div>
+        <section class="content">
+            <div class="text-box">
+                <h2>It's not just Coffee <br> Its' <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at tortor aliquet, elementum felis imperdiet, commodo magna.
+                    Vivamus auctor nec metus a finibus. Integer a porttitor lacus. Ut eu est eget tellus consectetur porta.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img-box">
+                <img src="assets/img1.png" class="starbucks">
+            </div>
+        </section>
+        <section class="thumbs">
+            <ul>
+                <li><img src="assets/thumb1.png" onclick="imageSlider('assets/img1.png'); changeCircleColor('#017143'); changeTextColor('#017143')"></li>
+                <li><img src="assets/thumb2.png" onclick="imageSlider('assets/img2.png'); changeCircleColor('#eb7495');changeTextColor('#eb7495')"></li>
+                <li><img src="assets/thumb3.png" onclick="imageSlider('assets/img3.png'); changeCircleColor('#d752b1');changeTextColor('#d752b1')"></li>
+            </ul>
+        </section>
+    </main>
+    <script>
+        function imageSlider(imageName){
+            document.querySelector('.starbucks').src = imageName;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function changeTextColor(textColor){
+            const text = document.querySelector('span');
+            text.style.color = textColor;
+        }
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
