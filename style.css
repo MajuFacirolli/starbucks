@@ -18,6 +18,10 @@ header {
     padding: 15px;
 }
 
+main{
+    min-height: calc(100vh - 150px);
+}
+
 .logo {
     width: 120px;
 }
@@ -54,7 +58,8 @@ header {
 }
 
 .text-box {
-    max-width: 650px;
+    display: flex;
+    flex-direction: column;
 }
 
 .text-box h2 {
@@ -71,6 +76,7 @@ header {
 }
 
 .text-box p {
+    max-width: 560px;
     margin-bottom: 40px;
 }
 
@@ -80,7 +86,8 @@ header {
     border: 1px solid #017143;
     border-radius: 20px;
     padding: 10px;
-    position: absolute;
+    width: 160px;
+    text-align: center;
 }
 
 .text-box a:hover {
@@ -123,4 +130,53 @@ header {
     background: #017143;
     clip-path: circle(600px at right 800px);
     z-index: -1;
+}
+
+@media (max-width: 900px){
+    
+    .navigation, .social-links, .circle{
+        display: none;
+    }
+
+    header{
+        justify-content: center;
+    }
+
+    .logo{
+        width: 95px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .text-box{
+        justify-content: center;
+    }
+
+    .text-box h2{
+        font-size: 2em;
+        align-self: center;
+        padding: 20px;
+    }
+
+    .text-box p{
+        padding: 15px;
+    }
+
+    .text-box a{
+        width: 120px;
+        font-size: 15px;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+
+    .starbucks{
+        width: 250px;
+    }
+
+    .thumbs{
+        margin: 40px;
+        padding: 15px;
+    }
 }

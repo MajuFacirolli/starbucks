@@ -2,6 +2,10 @@ const thumbnails = document.querySelectorAll('.thumbnails');
 thumbnails.forEach((thumbnail) => {
     thumbnail.addEventListener('mouseenter', () => {
         
+        if(window.innerWidth < 450) {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
         const mainImage = document.querySelector('.starbucks');
         const mainImageSource = thumbnail.attributes.id.value;
         mainImage.src = `/assets/${mainImageSource}.png`;
