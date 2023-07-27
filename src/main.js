@@ -8,7 +8,7 @@ thumbnails.forEach((thumbnail) => {
 
         const mainImage = document.querySelector('.starbucks');
         const mainImageSource = thumbnail.attributes.id.value;
-        mainImage.src = `/assets/${mainImageSource}.png`;
+        mainImage.src = `./src/assets/${mainImageSource}.png`;
         
         const circle = document.querySelector('.circle');
         const circleColor = thumbnail.getAttribute('data-color');
