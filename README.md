@@ -2,7 +2,7 @@
 
 # STARBUCKS
 
-This is a landing page with a image slider and color changes, inspired in [This Video] (https://www.youtube.com/watch?v=91Q6RvKvd7o) on Youtube.
+This is a landing page with a image slider and color changes, inspired in [This Video](https://www.youtube.com/watch?v=91Q6RvKvd7o) on Youtube.
 
 ## Overview
 
@@ -16,9 +16,9 @@ Besides the image sider, i added the color changes of the word 'starbucks'.
 
 ## Links
 
-- [Live Site URL] (https://majufacirolli.github.io/starbucks/)
-- [Inspiration video on Youtube] (https://www.youtube.com/watch?v=91Q6RvKvd7o)
+- [Live Site URL](https://majufacirolli.github.io/starbucks/)
+- [Inspiration video on Youtube](https://www.youtube.com/watch?v=91Q6RvKvd7o)
 
 ## Author 
 
-- LinkedIn - [Maria Julia Facirolli](https://www.linkedin.com/in/mariajuliafacirolli/)
+- LinkedIn: [Maria Julia Facirolli](https://www.linkedin.com/in/mariajuliafacirolli/)
